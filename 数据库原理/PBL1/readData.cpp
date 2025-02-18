@@ -42,6 +42,8 @@ struct Product {
     std::string brandCode;    // 外键：商品品牌
     std::string categoryCode; // 外键：商品分类
     std::string supplierCode; // 外键：供应商
+
+    int stockQuantity; // 新增库存字段
 };
 
 // 通用CSV读取函数，跳过以"//"开头的注释行及表头
@@ -144,6 +146,8 @@ int main() {
         std::getline(ss, p.model, ',');            // 型号
         std::getline(ss, p.unit, ',');             // 计量单位
         std::getline(ss, token, ',');              // 市场价
+
+
         try {
             p.marketPrice = std::stod(token);
         } catch (...) {
@@ -161,7 +165,14 @@ int main() {
         // 供应商信息
         std::getline(ss, p.supplierCode, ',');
         std::getline(ss, dummy, ',');   // 跳过 CSV 中的供应商名称
-        
+
+        std::string stockStr;
+        std::getline(ss, stockStr, ',');  // 读取库存数量的字符串
+        try {
+            p.stockQuantity = std::stoi(stockStr);
+        } catch (...) {
+            p.stockQuantity = 0;
+        }
         products.push_back(p);
     }
 
@@ -195,6 +206,7 @@ int main() {
                       << ", 电话：" << itS->phone 
                       << ", 简介：" << itS->description << ")";
         }
+        std::cout << "库存：" << p.stockQuantity << std::endl;
         std::cout << std::endl;
     }
 
