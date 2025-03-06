@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-
+#include <iomanip>
 class Product {
     private:
         int ProductID;
@@ -13,10 +12,11 @@ class Product {
         double ImportPrice;
         double ExportPrice;
         double RealPrice;
-        int Discount;
+        double Discount;
+        static int nextID;
     public:
-        Product(int ProductID, std::string ProductName, int Number, std::string Category, std::string Brand, double ImportPrice, double ExportPrice, double RealPrice, int Discount) {
-            this->ProductID = ProductID;
+        Product(std::string ProductName, int Number, std::string Category, std::string Brand, double ImportPrice, double ExportPrice, double RealPrice, double Discount) {
+            this->ProductID = nextID++;
             this->ProductName = ProductName;
             this->Number = Number;
             this->Category = Category;
@@ -98,7 +98,7 @@ class Product {
                 this->Discount = Discount;
             }
         }
-        int getDiscount() {
+        double getDiscount() {
             return Discount;
         }
         
@@ -126,7 +126,7 @@ class Product {
 
         double computeDiscount(){
             this->Discount = this->RealPrice / this->ExportPrice;
-            std::cout << "折扣为: " << this->Discount << std::endl;
+            std::cout << "折扣为: " <<this->Discount << std::endl;
             return this->Discount;
         }
 
@@ -141,19 +141,27 @@ class Product {
         }
     };
 
+int Product::nextID = 1;
+
 int main(){
-    Product apple(1, "苹果", 10, "水果", "农夫果园", 10, 15, 10, 0);
+    Product apple("苹果", 10, "水果", "农夫果园", 8, 12.8, 10.0, 0);
     apple.display();
     std::cout << "----------------" << std::endl;
     std::cout << "增加商品数量5个" << std::endl;
+    std::cout << "----------------" << std::endl;
     apple.addNumber(5);
     apple.display();
     std::cout << "----------------" << std::endl;
     std::cout << "减少商品数量3个" << std::endl;
+    std::cout << "----------------" << std::endl;
     apple.deleteNumber(3);
     apple.display();
     std::cout << "----------------" << std::endl;
     std::cout << "计算折扣" << std::endl;
     apple.computeDiscount();
+    std::cout << "----------------" << std::endl;
+    Product banana("香蕉", 10, "水果", "农夫果园", 5, 8.8, 7.0, 0);
+    banana.display();
+    std::cout << "----------------" << std::endl;
     return 0;
 }
