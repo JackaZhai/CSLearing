@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Javahomework:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Javahomework_jar</output-path>
+    <root id="archive" name="Javahomework.jar">
+      <element id="module-output" name="Javahomework" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fastjson-1.2.31.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/junit-4.13.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.19.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
