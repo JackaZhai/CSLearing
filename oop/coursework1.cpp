@@ -3,7 +3,7 @@
 #include <vector>
 
 
-class   Product {
+class Product {
     private:
         int ProductID;
         std::string ProductName;
@@ -26,6 +26,7 @@ class   Product {
             this->RealPrice = RealPrice;
             this->Discount = Discount;
         }
+
         void setProductID(int ProductID) {
             this->ProductID = ProductID;
         }
@@ -58,7 +59,7 @@ class   Product {
         }
         void setImportPrice(double ImportPrice) {
             if (ImportPrice < 0) {
-                std::cout << "Import Price must be more than 0" << std::endl;
+                std::cout << "进货价格必须大于0" << std::endl;
                 return;
             }
             this->ImportPrice = ImportPrice;
@@ -68,7 +69,7 @@ class   Product {
         }
         void setExportPrice(double ExportPrice) {
             if (ExportPrice < 0) {
-                std::cout << "Export Price must be more than 0" << std::endl;
+                std::cout << "出售价格必须大于0" << std::endl;
                 return;
             }
             this->ExportPrice = ExportPrice;
@@ -78,7 +79,7 @@ class   Product {
         }
         void setRealPrice(double RealPrice) {
             if (RealPrice < 0) {
-                std::cout << "Real Price must be more than 0" << std::endl;
+                std::cout << "实际价格必须大于0" << std::endl;
                 return;
             }
             this->RealPrice = RealPrice;
@@ -88,10 +89,10 @@ class   Product {
         }
         void setDiscount(int Discount) {
             if (Discount <= 0) {
-                std::cout << "Discount must be more than 0" << std::endl;
+                std::cout << "折扣必须大于0" << std::endl;
                 return;
             }else if(Discount > 1) {
-                std::cout << "Discount must be less than 1" << std::endl;
+                std::cout << "折扣必须小于1" << std::endl;
                 return;
             }else{
                 this->Discount = Discount;
@@ -101,13 +102,58 @@ class   Product {
             return Discount;
         }
         
-        void addNumber(int number) {
-            if (number < 0) {
-                std::cout << "Number must be more than 0" << std::endl;
+        void addNumber(int amount) {
+            if (amount < 0) {
+                std::cout << "数量必须大于0" << std::endl;
                 return;
             }
-            this->Number += number;
+            this->Number += amount;
         }
 
-        
+        void deleteNumber(int amount) {
+            if (amount < 0) {
+                std::cout << "数量必须大于0" << std::endl;
+                return;
+            }else if (amount > this->Number) {
+                std::cout << "数量必须小于" << this->Number << std::endl;
+                return;
+            }
+            this->Number -= amount;
+            if (this->Number < 5){
+                std::cout << "警告：产品数量少于5个，请补充库存" << std::endl;
+            }
+        }
+
+        double computeDiscount(){
+            this->Discount = this->RealPrice / this->ExportPrice;
+            std::cout << "折扣为: " << this->Discount << std::endl;
+            return this->Discount;
+        }
+
+        void display() {
+            std::cout << "商品编号: " << this->ProductID << std::endl;
+            std::cout << "商品名称: " << this->ProductName << std::endl;
+            std::cout << "数量: " << this->Number << std::endl;
+            std::cout << "类别: " << this->Category << std::endl;
+            std::cout << "品牌: " << this->Brand << std::endl;
+            std::cout << "出售价格: " << this->ExportPrice << std::endl;
+            std::cout << "实际价格: " << this->RealPrice << std::endl;
+        }
     };
+
+int main(){
+    Product apple(1, "苹果", 10, "水果", "农夫果园", 10, 15, 10, 0);
+    apple.display();
+    std::cout << "----------------" << std::endl;
+    std::cout << "增加商品数量5个" << std::endl;
+    apple.addNumber(5);
+    apple.display();
+    std::cout << "----------------" << std::endl;
+    std::cout << "减少商品数量3个" << std::endl;
+    apple.deleteNumber(3);
+    apple.display();
+    std::cout << "----------------" << std::endl;
+    std::cout << "计算折扣" << std::endl;
+    apple.computeDiscount();
+    return 0;
+}
