@@ -136,14 +136,15 @@ class Product {
             std::cout << "数量: " << this->Number << std::endl;
             std::cout << "类别: " << this->Category << std::endl;
             std::cout << "品牌: " << this->Brand << std::endl;
-            std::cout << "出售价格: " << this->ExportPrice << std::endl;
-            std::cout << "实际价格: " << this->RealPrice << std::endl;
+            std::cout << "标价: " << this->ExportPrice << std::endl;
+            std::cout << "折后价: " << this->RealPrice << std::endl;
         }
     };
 
 int Product::nextID = 1;
 
 int main(){
+    std::cout << "创建商品：苹果" << std::endl;
     Product apple("苹果", 10, "水果", "农夫果园", 8, 12.8, 10.0, 0);
     apple.display();
     std::cout << "----------------" << std::endl;
@@ -157,9 +158,10 @@ int main(){
     apple.deleteNumber(3);
     apple.display();
     std::cout << "----------------" << std::endl;
-    std::cout << "计算折扣" << std::endl;
+    std::cout << "计算苹果折扣" << std::endl;
     apple.computeDiscount();
     std::cout << "----------------" << std::endl;
+    std::cout << "创建商品：香蕉" << std::endl;
     Product banana("香蕉", 10, "水果", "农夫果园", 5, 8.8, 7.0, 0);
     banana.display();
     std::cout << "----------------" << std::endl;
