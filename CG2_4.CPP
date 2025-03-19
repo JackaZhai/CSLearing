@@ -2,10 +2,13 @@
 
 using namespace std;
 
+// 定义日期类
 class date {
 private:
     int year, month, day;
     
+public:
+    // 进行合法性检查
     bool isRunYear(int y) {
         return (y % 4 == 0 && y % 100 != 0) || (y % 400 == 0);
     }
@@ -29,14 +32,13 @@ private:
         if (d < 1 || d > getDaysInMonth(y, m)) return false;
         return true;
     }
-    
-public:
+
     date() {
         year = 2025;
         month = 1;
         day = 1;
     }
-    
+
     date(int y, int m, int d) {
         if (isBadDate(y, m, d)) {
             year = y;
@@ -44,12 +46,13 @@ public:
             day = d;
         } else {
             cout << "无效日期，使用默认值" << endl;
-            year = 2000;
+            year = 2025;
             month = 1;
             day = 1;
         }
-    }
+    } 
     
+    // 拷贝构造函数
     date(const date& d) {
         year = d.year;
         month = d.month;
@@ -57,7 +60,7 @@ public:
     }
     
     bool setYear(int y) {
-        if (y >= 1900 && y <= 2100) {
+        if (y >= 2024 ) {
             year = y;
             return true;
         }
@@ -99,7 +102,7 @@ public:
         cout << year << "年" << month << "月" << day << "日" << endl;
     }
     
-    void displayFormatted() const {
+    void displayF() const {
         cout << year << "-";
         if (month < 10) cout << "0";
         cout << month << "-";
@@ -113,11 +116,11 @@ int main() {
     cout << "默认日期：";
     date1.display();
     
-    date date2(2023, 3, 15);
+    date date2(2025, 3, 15);
     cout << "指定日期：";
     date2.display();
     
-    date date3(2023, 2, 30);
+    date date3(2025, 2, 30);
     cout << "尝试创建无效日期后：";
     date3.display();
     
@@ -126,23 +129,23 @@ int main() {
     date4.display();
     
     date date5;
-    if(date5.setYear(2024))
+    if(date5.setYear(2025))
         cout << "年份设置成功" << endl;
     if(date5.setMonth(2))
         cout << "月份设置成功" << endl;
     if(date5.setDay(29))
-        cout << "日期设置成功（闰年二月）" << endl;
+        cout << "日期设置成功" << endl;
     cout << "修改后的日期：";
-    date5.displayFormatted();
+    date5.displayF();
     
     if(!date5.setMonth(13))
-        cout << "无效月份被拒绝" << endl;
+        cout << "无效月份" << endl;
     if(!date5.setDay(30))
-        cout << "无效日期被拒绝（2月没有30日）" << endl;
+        cout << "无效日期" << endl;
     
     date5.setDate(2025, 12, 31);
     cout << "最终日期：";
-    date5.displayFormatted();
+    date5.displayF();
     
     return 0;
 }

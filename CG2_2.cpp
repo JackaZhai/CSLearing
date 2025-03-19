@@ -19,24 +19,19 @@ public:
         cout << "析构了一个CPU!" << endl;
     }
     CPU_Rank GetRank() const { return rank; }
-    int GetFrequency() const { return frequency; }
-    float GetVoltage() const { return voltage; }
-    void SetRank(CPU_Rank r) { rank = r; }
-    void SetFrequency(int f) { frequency = f; }
-    void SetVoltage(float v) { voltage = v; }
+
     void run() { 
-        cout << "CPU开始运行！" << endl;
-        cout << "等级为：" << GetRank() << endl;
+        cout << "CPU开始运行!" << endl;
+        cout << "等级为:" << GetRank() << endl;
      }
-    void stop() { cout << "CPU停止运行！" << endl; }
+    void stop() { cout << "CPU停止运行!" << endl; }
 };
 
 int main() {
     int r1, r2;
     cin >> r1 >> r2;
     
-  
-    CPU cpu1(static_cast<CPU_Rank>(r1)), cpu2(static_cast<CPU_Rank>(r2));
+    CPU cpu1((CPU_Rank(r1))), cpu2((CPU_Rank(r2)));
     
     cpu1.run();
     
