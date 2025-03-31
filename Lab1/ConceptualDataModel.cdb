@@ -1,0 +1,3272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{F7093D99-107F-4B04-AE1D-4EBCD61F4316}" Label="" LastModificationDate="1743429516" Name="ConceptualDataModel_1" Objects="202" Symbols="23" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="16.7.4.6866"?>
+<!--不要编辑此文件-->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<a:SessionID>00000000-0000-0000-0000-000000000000</a:SessionID>
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>F7093D99-107F-4B04-AE1D-4EBCD61F4316</a:ObjectID>
+<a:Name>ConceptualDataModel_1</a:Name>
+<a:Code>ConceptualDataModel_1</a:Code>
+<a:CreationDate>1743417598</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429485</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Conceptual Data Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+GenerationSelections=</a:PackageOptionsText>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Conceptual options]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+UseTerm=No
+EnableRequirements=No
+EnableFullShortcut=Yes
+SynchroCode=Yes
+InfoUnique=Yes
+AllowReuse=Yes
+InfoAllowReuse=Yes
+Notation=2
+RlshUnique=Yes
+DefaultDttp=
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyExat=No
+DomnCopyMand=No
+DttpFullName=Yes
+RlshAsstTmpl=Each %Entity1.Name%[CRLF].if %Entity1ToEntity2RoleMandatory%[CRLF] must[CRLF].else[CRLF] may[CRLF].endif[CRLF].if %Entity1ToEntity2Role%[CRLF] %.L:Entity1ToEntity2Role%[CRLF].else[CRLF] have[CRLF].endif[CRLF].if %Entity1ToEntity2RoleMaximumCardinality%==1[CRLF].if %Entity1ToEntity2RoleMandatory%[CRLF] one and only one[CRLF].else[CRLF] at most one[CRLF].endif[CRLF].else[CRLF] one or more[CRLF].endif[CRLF].if %Entity1%==%Entity2%[CRLF] other[CRLF].endif[CRLF] %Entity2.Name%.[CRLF]Each %Entity2.Name%[CRLF].if %Entity2ToEntity1RoleMandatory%[CRLF] must[CRLF].else[CRLF] may[CRLF].endif[CRLF].if %Entity2ToEntity1Role%[CRLF] %.L:Entity2ToEntity1Role%[CRLF].else[CRLF] have[CRLF].endif[CRLF].if %Entity2ToEntity1RoleMaximumCardinality%==1[CRLF].if %Entity2ToEntity1RoleMandatory%[CRLF] one and only one[CRLF].else[CRLF] at most one[CRLF].endif[CRLF].else[CRLF] one or more[CRLF].endif[CRLF].if %Entity1%==%Entity2%[CRLF] other[CRLF].endif[CRLF] %Entity1.Name%.
+RlshAsstExt=
+
+[ModelOptions\Conceptual options\NamingOptionsTemplates]
+
+[ModelOptions\Conceptual options\ClssNamingOptions]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FILO]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\AREA]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\AREA\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\AREA\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMPCKG]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMPCKG\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMDOMN]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMDOMN\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\INFO]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\INFO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\INFO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\ENTT]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\ENTT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\ENTT\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\IDTF]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\IDTF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\IDTF\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\RLSH]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\RLSH\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\RLSH\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\ASSC]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\ASSC\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\ASSC\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMINHR]
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMINHR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Conceptual options\ClssNamingOptions\CDMINHR\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Pdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+BuildTrgr=No
+TablePrefix=
+IndxPKName=%TABLE%_PK
+IndxAKName=%TABLE%_AK
+IndxFKName=%REFR%_FK
+IndxThreshold=
+ClassPrefix=
+ColnFKName=%.3:PARENT%_%COLUMN%
+ColnFKNameUse=No
+
+[ModelOptions\Generate\Oom]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=Yes
+
+[ModelOptions\Generate\Ldm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No</a:ModelOptionsText>
+<a:GlobalObjectID/>
+<a:RepositoryFilename>C:\Users\JackZhai\Desktop\ConceptualDataModel.cdm</a:RepositoryFilename>
+<c:ConceptualDiagrams>
+<o:ConceptualDiagram Id="o3">
+<a:ObjectID>D280D448-1308-42EB-BF6F-5CD14AB45316</a:ObjectID>
+<a:Name>ConceptualDataModel_1</a:Name>
+<a:Code>ConceptualDataModel_1</a:Code>
+<a:CreationDate>1743417598</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429485</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\CDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Constrain Labels=Yes
+Display Grid=No
+Show Page Delimiter=Yes
+Show Links intersections=Yes
+Activate automatic link routing=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+CompDark=0
+
+[DisplayPreferences\Object]
+Show Icon=No
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+Area.IconPicture=Yes
+Area.Stereotype=Yes
+Area.Comment=No
+Area.TextStyle=No
+Area.SubSymbols=Yes
+Area_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型(&amp;amp;T)&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Area Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;备注&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐(&amp;amp;T)&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+EObjShowStrn=Yes
+ExtendedObject.Comment=No
+ExtendedObject.IconPicture=No
+ExtendedObject.TextStyle=No
+ExtendedObject_SymbolLayout=
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+ExtendedLink_SymbolLayout=
+ExtDpdShowStrn=Yes
+ExtendedDependency_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Center&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+FileObject.Stereotype=No
+FileObject.DisplayName=Yes
+FileObject.LocationOrName=No
+FileObject.IconPicture=No
+FileObject.TextStyle=No
+FileObject.IconMode=Yes
+FileObject_SymbolLayout=
+Package.Stereotype=Yes
+Package.Comment=No
+Package.IconPicture=No
+Package.TextStyle=No
+Package_SymbolLayout=
+Display Model Version=Yes
+Entity.Stereotype=Yes
+Entity.Attributes=Yes
+Entity.Attributes._Filter=所有属性 CDMPENTALL
+Entity.Attributes._Columns=Stereotype DomainOrDataType IdentifierIndicator NullIndicator
+Entity.Attributes._Limit=-5
+Entity.Identifiers=Yes
+Entity.Identifiers._Columns=Stereotype IdentifierIndicator
+Entity.Comment=No
+Entity.IconPicture=No
+Entity.TextStyle=No
+Entity_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;名称(&amp;amp;A)&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No 标识符指标\r\nDataType No\r\nDomainOrDataType No 域或数据类型\r\nDomain No\r\nNullIndicator No Mandatory&quot; Filters=&quot;所有属性  CDMPENTALL &amp;quot;&amp;quot;\r\n主属性  CDMPENTPK &amp;quot;\&amp;quot;PIDTF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n识别属性  CDMPENTIDTF &amp;quot;\&amp;quot;AIDF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Identifiers&quot; Collection=&quot;Identifiers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No 标识符指标&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;备注&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐(&amp;amp;T)&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Relationship.Entity1ToEntity2Role=Yes
+Relationship.Entity2ToEntity1RoleCardinality=No
+Relationship.Entity1ToEntity2RoleDominant=Yes
+Relationship.Stereotype=Yes
+Relationship.DisplayName=Yes
+Relationship.Entity2ToEntity1Role=Yes
+Relationship.Entity1ToEntity2RoleCardinality=No
+Relationship.Entity2ToEntity1RoleDominant=Yes
+Relationship_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Role&quot; Attribute=&quot;Entity1ToEntity2Role&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Role&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;基数&quot; Attribute=&quot;Entity2ToEntity1RoleCardinality&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;基数&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Dominance&quot; Attribute=&quot;Entity1ToEntity2RoleDominant&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Dominance&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Center&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;名称(&amp;amp;A)&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Role&quot; Attribute=&quot;Entity2ToEntity1Role&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Role&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;基数&quot; Attribute=&quot;Entity1ToEntity2RoleCardinality&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;基数&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Dominance&quot; Attribute=&quot;Entity2ToEntity1RoleDominant&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Dominance&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+Association.Stereotype=Yes
+Association.Comment=No
+Association.Attributes=Yes
+Association.Attributes._Columns=Stereotype DomainOrDataType NullIndicator
+Association.Attributes._Limit=-5
+Association.IconPicture=No
+Association.TextStyle=No
+Association_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;名称(&amp;amp;A)&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;备注&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nDataType No\r\nDomainOrDataType No 域或数据类型\r\nDomain No\r\nNullIndicator No Mandatory&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐(&amp;amp;T)&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+AssociationLink.SymbolCardinality=Yes
+AssociationLink.Stereotype=Yes
+AssociationLink.Role=Yes
+AssociationLink_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;基数&quot; Attribute=&quot;SymbolCardinality&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;基数&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Center&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Role&quot; Attribute=&quot;Role&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+Inheritance.Stereotype=Yes
+Inheritance.DisplayName=Yes
+Inheritance.IconPicture=No
+Inheritance.TextStyle=No
+Inheritance_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;名称(&amp;amp;A)&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐(&amp;amp;T)&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\AREA]
+STRNFont=新宋体,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=新宋体,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=9600
+Height=8000
+Brush color=253 249 234
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=16
+Brush gradient color=245 230 173
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 121 98 6
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=64
+Brush gradient color=192 192 192
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 255 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+CENTERFont=Arial,8,N
+CENTERFont color=0, 0, 0
+Line style=2
+Source Arrow=24
+Center Arrow=24
+Target Arrow=7
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+Line style=2
+Source Arrow=24
+Center Arrow=24
+Target Arrow=7
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+OBJSTRNFont=新宋体,8,N
+OBJSTRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+LCNMFont=新宋体,8,N
+LCNMFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=-1
+
+[DisplayPreferences\Symbol\CDMPCKG]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\ENTT]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AttributesFont=Arial,8,N
+AttributesFont color=0 0 0
+EntityPrimaryAttributeFont=Arial,8,U
+EntityPrimaryAttributeFont color=0 0 0
+IdentifiersFont=Arial,8,N
+IdentifiersFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\RLSH]
+SOURCEFont=新宋体,8,N
+SOURCEFont color=0 0 0
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+DESTINATIONFont=新宋体,8,N
+DESTINATIONFont color=0 0 0
+Line style=2
+Source Arrow=24
+Center Arrow=24
+Target Arrow=24
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\ASSC]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AttributesFont=Arial,8,N
+AttributesFont color=0, 0, 0
+EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3000
+Brush color=208 208 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LINK]
+SOURCEFont=新宋体,8,N
+SOURCEFont color=0 0 0
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+Line style=2
+Source Arrow=24
+Center Arrow=24
+Target Arrow=24
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\CDMINHR]
+STRNFont=新宋体,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AutoAdjustToText=No
+Keep aspect=No
+Keep center=No
+Keep size=Yes
+Width=1575
+Height=1000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LINH]
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+Line style=2
+Source Arrow=24
+Center Arrow=24
+Target Arrow=24
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0 0 0
+Line style=2
+Source Arrow=24
+Center Arrow=24
+Target Arrow=24
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>1</a:PaperSource>
+<c:Symbols>
+<o:RelationshipSymbol Id="o4">
+<a:CreationDate>1743428784</a:CreationDate>
+<a:ModificationDate>1743429586</a:ModificationDate>
+<a:CenterTextOffset>(-9500, -1002)</a:CenterTextOffset>
+<a:Rect>((-19347,42419), (5070,49818))</a:Rect>
+<a:ListOfPoints>((-14847,42819),(-14847,49418),(4670,49418),(4670,44019),(-18947,44019))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>4</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o6"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o7">
+<a:CreationDate>1743428868</a:CreationDate>
+<a:ModificationDate>1743429591</a:ModificationDate>
+<a:Rect>((-10836,34915), (19175,42898))</a:Rect>
+<a:ListOfPoints>((-10436,41944),(14975,41944),(14975,36315))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o8"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o9"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o10">
+<a:CreationDate>1743428907</a:CreationDate>
+<a:ModificationDate>1743429591</a:ModificationDate>
+<a:CenterTextOffset>(8363, 634)</a:CenterTextOffset>
+<a:Rect>((-13471,26859), (9958,32988))</a:Rect>
+<a:ListOfPoints>((-12809,27259),(-12809,31788),(9558,31788))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>2</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o11"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o8"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o12"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o13">
+<a:CreationDate>1743428945</a:CreationDate>
+<a:ModificationDate>1743429591</a:ModificationDate>
+<a:Rect>((7551,17098), (19151,30117))</a:Rect>
+<a:ListOfPoints>((13351,29717),(13351,18498))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o8"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o14"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o15"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o16">
+<a:CreationDate>1743428989</a:CreationDate>
+<a:ModificationDate>1743429539</a:ModificationDate>
+<a:Rect>((-92646,1484), (-83446,35690))</a:Rect>
+<a:ListOfPoints>((-88016,35290),(-88016,17315),(-88076,17315),(-88076,1884))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>4</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o17"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o19"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o20">
+<a:CreationDate>1743429017</a:CreationDate>
+<a:ModificationDate>1743429539</a:ModificationDate>
+<a:Rect>((-79949,684), (-7409,14411))</a:Rect>
+<a:ListOfPoints>((-12809,14011),(-12809,1884),(-78549,1884))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o11"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o21"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o22">
+<a:CreationDate>1743429077</a:CreationDate>
+<a:ModificationDate>1743429612</a:ModificationDate>
+<a:Rect>((-56147,8756), (-38563,11156))</a:Rect>
+<a:ListOfPoints>((-38963,9956),(-54747,9956))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o23"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o24"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o25"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o26">
+<a:CreationDate>1743429182</a:CreationDate>
+<a:ModificationDate>1743429586</a:ModificationDate>
+<a:Rect>((-25594,25859), (-17194,39045))</a:Rect>
+<a:ListOfPoints>((-21394,38645),(-21394,27259))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o11"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o27"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o28">
+<a:CreationDate>1743429341</a:CreationDate>
+<a:ModificationDate>1743429602</a:ModificationDate>
+<a:CenterTextOffset>(-13727, -1512)</a:CenterTextOffset>
+<a:Rect>((-79658,29025), (-51208,36490))</a:Rect>
+<a:ListOfPoints>((-51870,29425),(-51870,35290),(-78258,35290))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o29"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o17"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o30"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o31">
+<a:CreationDate>1743429384</a:CreationDate>
+<a:ModificationDate>1743429543</a:ModificationDate>
+<a:Rect>((-43743,19435), (-22167,21835))</a:Rect>
+<a:ListOfPoints>((-22567,20635),(-42343,20635))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o11"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o29"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o32"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o33">
+<a:CreationDate>1743429431</a:CreationDate>
+<a:ModificationDate>1743429613</a:ModificationDate>
+<a:CenterTextOffset>(-1181, 771)</a:CenterTextOffset>
+<a:Rect>((-71592,11193), (-59571,23549))</a:Rect>
+<a:ListOfPoints>((-70051,11593),(-70051,17315),(-60771,17315),(-60771,23149))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o24"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o29"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o34"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o35">
+<a:CreationDate>1743429485</a:CreationDate>
+<a:ModificationDate>1743429583</a:ModificationDate>
+<a:CenterTextOffset>(-6636, -1099)</a:CenterTextOffset>
+<a:Rect>((-60875,24433), (-16631,45482))</a:Rect>
+<a:ListOfPoints>((-60213,45082),(-60213,36891),(-36943,36891),(-36943,25633),(-17031,25633))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>4371</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o36"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o11"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o37"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:EntitySymbol Id="o36">
+<a:CreationDate>1743417623</a:CreationDate>
+<a:ModificationDate>1743429545</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-70543,45082), (-51027,51680))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o38"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o17">
+<a:CreationDate>1743417623</a:CreationDate>
+<a:ModificationDate>1743429537</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-97774,31516), (-78258,39064))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o39"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o5">
+<a:CreationDate>1743417624</a:CreationDate>
+<a:ModificationDate>1743429586</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-29952,38645), (-10436,45243))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o40"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o8">
+<a:CreationDate>1743417624</a:CreationDate>
+<a:ModificationDate>1743429591</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((5886,29717), (24064,36315))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o41"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o11">
+<a:CreationDate>1743417624</a:CreationDate>
+<a:ModificationDate>1743429526</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-22567,14011), (-3051,27259))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o42"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o14">
+<a:CreationDate>1743417625</a:CreationDate>
+<a:ModificationDate>1743429555</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((3593,11900), (23109,18498))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o43"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o18">
+<a:CreationDate>1743417625</a:CreationDate>
+<a:ModificationDate>1743429539</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-97603,-1890), (-78549,5658))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o44"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o23">
+<a:CreationDate>1743417626</a:CreationDate>
+<a:ModificationDate>1743429594</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-38963,5714), (-21095,12312))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o45"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o24">
+<a:CreationDate>1743417626</a:CreationDate>
+<a:ModificationDate>1743429612</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-74263,4282), (-54747,15630))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o46"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o29">
+<a:CreationDate>1743417627</a:CreationDate>
+<a:ModificationDate>1743429543</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-61397,19977), (-42343,29425))</a:Rect>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o47"/>
+</c:Object>
+</o:EntitySymbol>
+</c:Symbols>
+</o:ConceptualDiagram>
+</c:ConceptualDiagrams>
+<c:DefaultDiagram>
+<o:ConceptualDiagram Ref="o3"/>
+</c:DefaultDiagram>
+<c:Entities>
+<o:Entity Id="o38">
+<a:ObjectID>9EA6AE4B-74CF-4EAF-A3F9-A845942F7B01</a:ObjectID>
+<a:Name>商品品牌</a:Name>
+<a:Code>商品品牌</a:Code>
+<a:CreationDate>1743417623</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429516</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o48">
+<a:ObjectID>6322C355-923D-4F8D-98DB-D08713E49799</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o49"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o48"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o49">
+<a:ObjectID>DF5E02DC-ED69-4B4B-934C-B5687EBD2B0E</a:ObjectID>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o50"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o51">
+<a:ObjectID>3FBED3F1-ED7C-4FEC-927B-EF7B90BC9BE1</a:ObjectID>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o52"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o53">
+<a:ObjectID>77FE2870-8133-4723-B054-417684A7DAC4</a:ObjectID>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o54"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o55">
+<a:ObjectID>47C2B2EB-577B-4EB6-A1D1-980C77AF858B</a:ObjectID>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o56"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o39">
+<a:ObjectID>E050B3B3-EA38-426D-A987-68A505741D30</a:ObjectID>
+<a:Name>商品供应商</a:Name>
+<a:Code>商品供应商</a:Code>
+<a:CreationDate>1743417623</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429357</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o57">
+<a:ObjectID>8508AAE9-37C0-4B45-9F4F-50AFFC7BF2BD</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o58"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o57"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o58">
+<a:ObjectID>45F087BB-7CA1-49E8-B873-85C8415AE32E</a:ObjectID>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o59"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o60">
+<a:ObjectID>B85093B1-F2E2-4788-B201-7EC074F31333</a:ObjectID>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o61"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o62">
+<a:ObjectID>79F43A50-CF77-4E90-B0AC-CAF4927EDD4E</a:ObjectID>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o63"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o64">
+<a:ObjectID>22BAAF00-06AC-4C79-98CC-415FC84EBABF</a:ObjectID>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o65"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o66">
+<a:ObjectID>7AC93AC7-E777-4EC8-BD63-701237E13C79</a:ObjectID>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o67"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o40">
+<a:ObjectID>E89EC922-661E-43F3-A5E1-BE3BED90E891</a:ObjectID>
+<a:Name>商品分类</a:Name>
+<a:Code>商品分类</a:Code>
+<a:CreationDate>1743417624</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429203</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o68">
+<a:ObjectID>9F5FBDA2-0A12-4138-8A9A-CE14A3422660</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o69"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o68"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o69">
+<a:ObjectID>1F56F145-D493-49B3-AE89-9CCA51680803</a:ObjectID>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o70"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o71">
+<a:ObjectID>CF284FCF-5CD0-4260-B33B-D63C360293B1</a:ObjectID>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o72"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o73">
+<a:ObjectID>8CC45F1C-4039-42C2-B000-2F5E8F7C1FD1</a:ObjectID>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o74"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o75">
+<a:ObjectID>A09CDDF0-3CD3-42F4-98F8-53E8B8C4B81A</a:ObjectID>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o76"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o41">
+<a:ObjectID>69915C9B-F44E-49DF-B7D7-EB1BBC4161F9</a:ObjectID>
+<a:Name>商品规格</a:Name>
+<a:Code>商品规格</a:Code>
+<a:CreationDate>1743417624</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429240</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o77">
+<a:ObjectID>D3B80080-2E30-4A5F-A82F-92D262BEDDE6</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o78"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o77"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o78">
+<a:ObjectID>DD792693-FD9F-46F1-8FD8-8A6845C34C04</a:ObjectID>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o79"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o80">
+<a:ObjectID>9D878B4F-E576-42F8-8183-3630D09A88E6</a:ObjectID>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o81"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o82">
+<a:ObjectID>7AC92088-5524-48F1-9F04-A364B45BBB40</a:ObjectID>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o83"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o84">
+<a:ObjectID>10478ADD-F5B3-4FBE-B9E3-EC82D062921C</a:ObjectID>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o85"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o42">
+<a:ObjectID>358C4AD1-A1AE-43AF-8FB5-1ABB33CBBCE0</a:ObjectID>
+<a:Name>商品信息</a:Name>
+<a:Code>商品信息</a:Code>
+<a:CreationDate>1743417624</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429516</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o86">
+<a:ObjectID>67B1079E-0B1A-4EEA-A490-E0B536DCB2B0</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743427198</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o87"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o86"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o87">
+<a:ObjectID>F85C2B04-0643-4063-A247-5F5E827FC00A</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o88"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o89">
+<a:ObjectID>44E54670-528B-4B4D-A53E-4A438C213D22</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o90"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o91">
+<a:ObjectID>EA2FF9C2-C12E-4C28-8E38-132FF69FB427</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o92"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o93">
+<a:ObjectID>3D67369F-4E98-4DAB-A46F-86CF3CD3670D</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o94"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o95">
+<a:ObjectID>7CC6F412-FA35-47ED-8D8F-0D1950F8B650</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o96"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o97">
+<a:ObjectID>EFF7C078-1488-4196-BEA8-1E880DD18E96</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o98"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o99">
+<a:ObjectID>78EA5B96-0DEF-4307-98D6-EC1329373768</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o100"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o101">
+<a:ObjectID>A948CB46-AEB3-4C45-91DB-6B4FE78939A5</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o102"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o103">
+<a:ObjectID>115706FE-8D31-47DB-9E6B-D68646B0AF79</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o104"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o105">
+<a:ObjectID>4803FE2B-9BED-463C-B131-4E77C62AA8CB</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o106"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o107">
+<a:ObjectID>F9913175-ED95-4201-A7D4-EACFA0AD43D1</a:ObjectID>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o108"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o43">
+<a:ObjectID>536DA8AE-281E-4C2C-9934-CA9E4FA35363</a:ObjectID>
+<a:Name>商品规格值</a:Name>
+<a:Code>商品规格值</a:Code>
+<a:CreationDate>1743417625</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429240</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o109">
+<a:ObjectID>539EC39F-6F41-46E1-BA67-A667127158BD</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o110"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o109"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o110">
+<a:ObjectID>68FCF515-FBC9-4A65-BB58-81D241414862</a:ObjectID>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o111"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o112">
+<a:ObjectID>A13DD803-7B99-4A18-AC64-13BBD43CEE98</a:ObjectID>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o113"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o114">
+<a:ObjectID>E4FE4002-4ACF-4B18-AF79-9932FC318294</a:ObjectID>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o115"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o116">
+<a:ObjectID>A16A4B71-A75D-4541-8B16-36D17DF76C69</a:ObjectID>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o117"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o44">
+<a:ObjectID>C757E809-7090-4879-A230-0D60FB6B183A</a:ObjectID>
+<a:Name>供应商商品关系</a:Name>
+<a:Code>供应商商品关系</a:Code>
+<a:CreationDate>1743417625</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429295</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o118">
+<a:ObjectID>3138FAAC-1733-41FF-A809-195FB18E7B07</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o119"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o118"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o119">
+<a:ObjectID>6D3CBF01-7717-4122-82BD-229B20AD7631</a:ObjectID>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o120"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o121">
+<a:ObjectID>5016EA9D-E06F-4EDA-B6CC-A925EABE492A</a:ObjectID>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o122"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o123">
+<a:ObjectID>C44A211F-BD2E-4F49-BFF2-07B843D590C5</a:ObjectID>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o124"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o125">
+<a:ObjectID>7277772C-BD90-4F5D-B0DD-EB85C5E31667</a:ObjectID>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o126"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o127">
+<a:ObjectID>945C1BE1-F91C-4DD9-944E-36F0B31F7299</a:ObjectID>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o128"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o45">
+<a:ObjectID>38791B6C-3400-4508-B1C8-7E1A1F5EDC53</a:ObjectID>
+<a:Name>客户信息</a:Name>
+<a:Code>客户信息</a:Code>
+<a:CreationDate>1743417626</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429148</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o129">
+<a:ObjectID>B030236D-62FA-4FB5-A52F-999B2054DA9F</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o130"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o129"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o130">
+<a:ObjectID>B17A396B-EF0B-429C-AD98-0364ED63ACCF</a:ObjectID>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o131"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o132">
+<a:ObjectID>4C8FE107-E7C8-4938-9955-8261D33D2928</a:ObjectID>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o133"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o134">
+<a:ObjectID>04069E47-D5D0-4BA5-9444-FD9E8F3A88BE</a:ObjectID>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o135"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o136">
+<a:ObjectID>C198A8A9-0AB8-4C87-8CDD-D6363F0832F8</a:ObjectID>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o137"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o46">
+<a:ObjectID>4269FC38-A433-488D-9C36-27472A946050</a:ObjectID>
+<a:Name>订单</a:Name>
+<a:Code>订单</a:Code>
+<a:CreationDate>1743417626</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429454</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o138">
+<a:ObjectID>8A0401E1-46AF-401A-9CAF-1556AD504EEC</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o139"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o138"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o139">
+<a:ObjectID>BA263BE1-8B22-45E1-9A68-60F324913637</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o140"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o141">
+<a:ObjectID>1339D006-FF5F-4667-9EC5-8139BADCC043</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o142"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o143">
+<a:ObjectID>B4387ACB-4259-4A29-82B0-13AC3A633CBA</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o144"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o145">
+<a:ObjectID>849FD5A2-115E-49AF-A57F-693B6E18C55C</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o146"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o147">
+<a:ObjectID>5677E8A3-9740-4EFB-8F03-16595116B693</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o148"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o149">
+<a:ObjectID>A435363A-7B5A-46AA-A662-BA56892A9370</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:DataItem>
+<o:DataItem Ref="o150"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o151">
+<a:ObjectID>C08A32E8-F874-46ED-8766-55C5D3685E71</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o152"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o153">
+<a:ObjectID>E277F33A-CD70-466D-AFCA-F47D0F64FA11</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o154"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o155">
+<a:ObjectID>28238C4C-679E-4D77-A58D-60F05B43ED9E</a:ObjectID>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o156"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o47">
+<a:ObjectID>671D1E1E-FE6D-43E5-8656-8C72CCC90488</a:ObjectID>
+<a:Name>订单明细</a:Name>
+<a:Code>订单明细</a:Code>
+<a:CreationDate>1743417627</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429454</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifiers>
+<o:Identifier Id="o157">
+<a:ObjectID>AF50C0EA-7243-4083-8DD6-684BB38F0882</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o158"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o157"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o158">
+<a:ObjectID>48E74F00-57A4-4CFD-AA49-DA6BE67CE012</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o159"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o160">
+<a:ObjectID>4C9AD81F-D6C3-4F68-85B7-44AE711A7F7C</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o161"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o162">
+<a:ObjectID>A42C8EC3-1313-4E7E-854D-31742EB26126</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o163"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o164">
+<a:ObjectID>6D608AF4-A4B5-4886-93F3-617BACC74CB8</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o165"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o166">
+<a:ObjectID>7EF949C1-9EBD-407F-9C63-4A82E0752422</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o167"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o168">
+<a:ObjectID>4B40ADDF-D972-4056-B328-412EF3385F03</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o169"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o170">
+<a:ObjectID>E79DF745-D44C-4D2E-956B-D7F6F8C4415F</a:ObjectID>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o171"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+</c:Entities>
+<c:Relationships>
+<o:Relationship Id="o6">
+<a:ObjectID>40EA2FF1-F6FC-48C7-9F0F-A9980A7F652B</a:ObjectID>
+<a:Name>包含</a:Name>
+<a:Code>包含</a:Code>
+<a:CreationDate>1743428784</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743428800</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o40"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o40"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o9">
+<a:ObjectID>C092907A-A749-40BB-9711-0CF621213CE4</a:ObjectID>
+<a:Name>一个分类定义多组规格</a:Name>
+<a:Code>一个分类定义多组规格</a:Code>
+<a:CreationDate>1743428868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743428875</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o41"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o40"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o12">
+<a:ObjectID>49303914-725F-4643-8021-3CC465C12504</a:ObjectID>
+<a:Name>一个商品有多个规格值</a:Name>
+<a:Code>一个商品有多个规格值</a:Code>
+<a:CreationDate>1743428907</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743428915</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o41"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o15">
+<a:ObjectID>AF357689-777C-457D-B298-8690E69E7740</a:ObjectID>
+<a:Name>一个规格对应多个商品的规格值</a:Name>
+<a:Code>一个规格对应多个商品的规格值</a:Code>
+<a:CreationDate>1743428945</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429240</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o43"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o41"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o19">
+<a:ObjectID>D78DEE98-C4A4-4EB9-995D-914F2E4B275B</a:ObjectID>
+<a:Name>一个供应商提供多种商品</a:Name>
+<a:Code>一个供应商提供多种商品</a:Code>
+<a:CreationDate>1743428989</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429295</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o44"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o39"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o21">
+<a:ObjectID>C7869027-64B5-4EF0-9D91-EDFAC2A08A66</a:ObjectID>
+<a:Name>一个商品可由多个供应商提供</a:Name>
+<a:Code>一个商品可由多个供应商提供</a:Code>
+<a:CreationDate>1743429017</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429261</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o44"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o25">
+<a:ObjectID>6C58ECCB-1592-4DFE-8278-B0F6D1781F4E</a:ObjectID>
+<a:Name>一个客户有多个订单</a:Name>
+<a:Code>一个客户有多个订单</a:Code>
+<a:CreationDate>1743429077</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429148</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o46"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o45"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o27">
+<a:ObjectID>0CDF1822-D87B-4E16-8A0A-185B0FEEE2D5</a:ObjectID>
+<a:Name>一个分类包含多个商品</a:Name>
+<a:Code>一个分类包含多个商品</a:Code>
+<a:CreationDate>1743429182</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429203</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o42"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o40"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o30">
+<a:ObjectID>E20DF572-2156-4197-A21F-8E0BCAEA6C1B</a:ObjectID>
+<a:Name>记录每个订单项的实际供货商</a:Name>
+<a:Code>记录每个订单项的实际供货商</a:Code>
+<a:CreationDate>1743429341</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429357</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o39"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o47"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o32">
+<a:ObjectID>28FCA19A-2C99-4BA9-9F90-9EF23B3CDDB2</a:ObjectID>
+<a:Name>一个商品可出现在多个订单中</a:Name>
+<a:Code>一个商品可出现在多个订单中</a:Code>
+<a:CreationDate>1743429384</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429393</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o47"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o34">
+<a:ObjectID>2E457E50-08A5-431B-A922-BF796CD7A03B</a:ObjectID>
+<a:Name>一个订单包含多个商品明细</a:Name>
+<a:Code>一个订单包含多个商品明细</a:Code>
+<a:CreationDate>1743429431</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429454</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o47"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o46"/>
+</c:Object2>
+</o:Relationship>
+<o:Relationship Id="o37">
+<a:ObjectID>EFC8DC09-D264-426C-B5F4-BDEACAE23E34</a:ObjectID>
+<a:Name>一个品牌对应多个商品</a:Name>
+<a:Code>一个品牌对应多个商品</a:Code>
+<a:CreationDate>1743429485</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743429516</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:GlobalObjectID/>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o42"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o38"/>
+</c:Object2>
+</o:Relationship>
+</c:Relationships>
+<c:DataItems>
+<o:DataItem Id="o50">
+<a:ObjectID>BACD8D5D-258C-4D24-B65F-E4485BA97064</a:ObjectID>
+<a:Name>品牌ID</a:Name>
+<a:Code>品牌ID</a:Code>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743428653</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o52">
+<a:ObjectID>D921FB6E-51C9-4EE7-80DC-3A5962E2ACAD</a:ObjectID>
+<a:Name>品牌名称</a:Name>
+<a:Code>品牌名称</a:Code>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o54">
+<a:ObjectID>3A194C72-CEEB-4A79-BBC3-74E9B01EC0D9</a:ObjectID>
+<a:Name>品牌网址</a:Name>
+<a:Code>品牌网址</a:Code>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o56">
+<a:ObjectID>BE83996C-B195-4D0A-8E80-27CE98A9B516</a:ObjectID>
+<a:Name>品牌图片路径</a:Name>
+<a:Code>品牌图片路径</a:Code>
+<a:CreationDate>1743418161</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743418204</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o59">
+<a:ObjectID>467809C2-9F38-4F05-AD88-E5DB02C1E02A</a:ObjectID>
+<a:Name>供应商ID</a:Name>
+<a:Code>供应商ID</a:Code>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o61">
+<a:ObjectID>372E86C1-7CC0-4374-8C3C-9998FD688DF4</a:ObjectID>
+<a:Name>供应商名称</a:Name>
+<a:Code>供应商名称</a:Code>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o63">
+<a:ObjectID>6432DBB6-D4AE-444D-ACF2-19489F83CD3E</a:ObjectID>
+<a:Name>供应商联系人</a:Name>
+<a:Code>供应商联系人</a:Code>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o65">
+<a:ObjectID>319E20C4-4D6F-4BAA-9878-EF629DBCDBA6</a:ObjectID>
+<a:Name>供应商电话</a:Name>
+<a:Code>供应商电话</a:Code>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o67">
+<a:ObjectID>3B6214ED-2080-4F3D-B83E-563ED45FF478</a:ObjectID>
+<a:Name>供应商描述</a:Name>
+<a:Code>供应商描述</a:Code>
+<a:CreationDate>1743426743</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426861</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>TXT</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o70">
+<a:ObjectID>819E7591-46C4-4374-98DB-9F877AD9C25F</a:ObjectID>
+<a:Name>分类ID</a:Name>
+<a:Code>分类ID</a:Code>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743428525</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o72">
+<a:ObjectID>C5A3A4B2-AB97-4814-8BFE-4E0D8D04A1A8</a:ObjectID>
+<a:Name>分类名称</a:Name>
+<a:Code>分类名称</a:Code>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o74">
+<a:ObjectID>CE23A210-A77A-4A00-9AC3-A5EBF615B307</a:ObjectID>
+<a:Name>分类图片路径</a:Name>
+<a:Code>分类图片路径</a:Code>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743426942</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o76">
+<a:ObjectID>8D543334-FA8D-4564-8550-385D9732F0FA</a:ObjectID>
+<a:Name>上级分类ID</a:Name>
+<a:Code>上级分类ID</a:Code>
+<a:CreationDate>1743426868</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743428525</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o79">
+<a:ObjectID>5E9A693F-7616-4AE1-96C2-D8EC84042B2D</a:ObjectID>
+<a:Name>规格ID</a:Name>
+<a:Code>规格ID</a:Code>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o81">
+<a:ObjectID>760ABD8C-3B93-41D8-98D9-8ABA17AF2997</a:ObjectID>
+<a:Name>规格名称</a:Name>
+<a:Code>规格名称</a:Code>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o83">
+<a:ObjectID>61C52790-059E-47AB-99AC-82B1BF534013</a:ObjectID>
+<a:Name>规格单位</a:Name>
+<a:Code>规格单位</a:Code>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o85">
+<a:ObjectID>D3E6E442-5669-408B-9FD1-7161C165C01B</a:ObjectID>
+<a:Name>关联分类ID</a:Name>
+<a:Code>关联分类ID</a:Code>
+<a:CreationDate>1743426948</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427011</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o88">
+<a:ObjectID>1249B455-AFEF-4E9A-A74C-3C1E16F56F69</a:ObjectID>
+<a:Name>商品编码</a:Name>
+<a:Code>商品编码</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o90">
+<a:ObjectID>5875A37A-33C7-4E87-8655-381C2B0374B2</a:ObjectID>
+<a:Name>商品名称</a:Name>
+<a:Code>商品名称</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o92">
+<a:ObjectID>418F1191-F607-431D-AED4-5BB188C74CAB</a:ObjectID>
+<a:Name>商品型号</a:Name>
+<a:Code>商品型号</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o94">
+<a:ObjectID>86163F92-642F-45B5-B784-8E953F10D922</a:ObjectID>
+<a:Name>商品单位</a:Name>
+<a:Code>商品单位</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA10</a:DataType>
+<a:Length>10</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o96">
+<a:ObjectID>58387FDD-3F7F-4AF6-94C2-3AE2E824E189</a:ObjectID>
+<a:Name>市场参考价</a:Name>
+<a:Code>市场参考价</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC10,2</a:DataType>
+<a:Length>10</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o98">
+<a:ObjectID>5355ACE5-6ED7-46FC-940C-2BA168321E87</a:ObjectID>
+<a:Name>销售价格</a:Name>
+<a:Code>销售价格</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC10,2</a:DataType>
+<a:Length>10</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o100">
+<a:ObjectID>A9D0390D-54DD-4A78-A3EE-405A8C4FF923</a:ObjectID>
+<a:Name>成本价格</a:Name>
+<a:Code>成本价格</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC10,2</a:DataType>
+<a:Length>10</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o102">
+<a:ObjectID>AFBCDBC4-F97B-4A23-9C10-D9E74AB3CFF8</a:ObjectID>
+<a:Name>商品缩略图</a:Name>
+<a:Code>商品缩略图</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o104">
+<a:ObjectID>4A7733F8-16A1-47AF-B776-D72470AADB82</a:ObjectID>
+<a:Name>商品详细介绍</a:Name>
+<a:Code>商品详细介绍</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>TXT</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o106">
+<a:ObjectID>9EC36056-31F6-4BC2-BF7D-73B3F652C31D</a:ObjectID>
+<a:Name>关联品牌ID</a:Name>
+<a:Code>关联品牌ID</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427197</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o108">
+<a:ObjectID>2083626F-4192-45EE-8624-C6E7172EAE20</a:ObjectID>
+<a:Name>所属分类ID</a:Name>
+<a:Code>所属分类ID</a:Code>
+<a:CreationDate>1743427046</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427242</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o111">
+<a:ObjectID>11193EEF-32DF-41C7-8C73-CF1D5510C3A1</a:ObjectID>
+<a:Name>规格值ID</a:Name>
+<a:Code>规格值ID</a:Code>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o113">
+<a:ObjectID>D6E39114-C7B8-4460-914F-9440EA3FF01D</a:ObjectID>
+<a:Name>对应商品编码</a:Name>
+<a:Code>对应商品编码</a:Code>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o115">
+<a:ObjectID>02457B37-AAD2-407A-ACC1-F758C9D5CF59</a:ObjectID>
+<a:Name>关联规格ID</a:Name>
+<a:Code>关联规格ID</a:Code>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o117">
+<a:ObjectID>7EA2FF22-A6D3-4D6A-9FE3-130BA5916755</a:ObjectID>
+<a:Name>规格具体值</a:Name>
+<a:Code>规格具体值</a:Code>
+<a:CreationDate>1743427294</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427383</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o120">
+<a:ObjectID>80011924-F090-4E7D-958B-0F48BEF6E276</a:ObjectID>
+<a:Name>供应关系ID</a:Name>
+<a:Code>供应关系ID</a:Code>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o122">
+<a:ObjectID>C5A275A9-B541-4F4D-A02E-68857DD6FF1E</a:ObjectID>
+<a:Name>关联供应商ID</a:Name>
+<a:Code>关联供应商ID</a:Code>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o124">
+<a:ObjectID>96614D43-96A3-4629-99DA-D097FD3A9262</a:ObjectID>
+<a:Name>关联商品编码</a:Name>
+<a:Code>关联商品编码</a:Code>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o126">
+<a:ObjectID>1E34E18F-9812-4786-9619-AB3ED6E3F4B7</a:ObjectID>
+<a:Name>当前库存量</a:Name>
+<a:Code>当前库存量</a:Code>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o128">
+<a:ObjectID>F48317BA-2EE3-4EA4-A7B8-2594B0FCB261</a:ObjectID>
+<a:Name>供货价格</a:Name>
+<a:Code>供货价格</a:Code>
+<a:CreationDate>1743427389</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427460</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC10,2</a:DataType>
+<a:Length>10</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o131">
+<a:ObjectID>8E4F4C45-55DE-433A-BB7A-0E91D4015581</a:ObjectID>
+<a:Name>客户ID</a:Name>
+<a:Code>客户ID</a:Code>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o133">
+<a:ObjectID>A7D3FA54-5E59-4614-AF4F-346B178DF787</a:ObjectID>
+<a:Name>客户姓名</a:Name>
+<a:Code>客户姓名</a:Code>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o135">
+<a:ObjectID>049A85DE-977E-4695-A44E-AD8B365FEB34</a:ObjectID>
+<a:Name>客户电话</a:Name>
+<a:Code>客户电话</a:Code>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o137">
+<a:ObjectID>9A560417-1A7D-4F60-90E7-3F3F5E7E954D</a:ObjectID>
+<a:Name>客户住址</a:Name>
+<a:Code>客户住址</a:Code>
+<a:CreationDate>1743427470</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427536</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o140">
+<a:ObjectID>7BD76F94-3F97-4E5E-BE85-B55A4DE22A6A</a:ObjectID>
+<a:Name>订单编号</a:Name>
+<a:Code>订单编号</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o142">
+<a:ObjectID>D1E9F673-4E3F-465E-ADFE-AECBEC441113</a:ObjectID>
+<a:Name>下单客户ID</a:Name>
+<a:Code>下单客户ID</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o144">
+<a:ObjectID>45E1802F-6FAB-448A-AA95-6E20FF5F0B8C</a:ObjectID>
+<a:Name>收货人姓名</a:Name>
+<a:Code>收货人姓名</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o146">
+<a:ObjectID>1BD3C810-DB82-48BD-B720-F4135DC486AF</a:ObjectID>
+<a:Name>收货联系电话</a:Name>
+<a:Code>收货联系电话</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o148">
+<a:ObjectID>1805848A-BDA3-48BA-A0A0-BDD18731F4F8</a:ObjectID>
+<a:Name>收货详细地址</a:Name>
+<a:Code>收货详细地址</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o150">
+<a:ObjectID>FA461AFC-00E6-4FD8-8C6F-038CD3311108</a:ObjectID>
+<a:Name>收货邮编</a:Name>
+<a:Code>收货邮编</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA10</a:DataType>
+<a:Length>10</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o152">
+<a:ObjectID>533CA010-7BF9-4498-A21F-E5862C40B4B1</a:ObjectID>
+<a:Name>创建时间</a:Name>
+<a:Code>创建时间</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DT</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o154">
+<a:ObjectID>E7DF9571-7FFF-4068-B0A0-F1230667490E</a:ObjectID>
+<a:Name>订单总金额</a:Name>
+<a:Code>订单总金额</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC12,2</a:DataType>
+<a:Length>12</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o156">
+<a:ObjectID>C5CA7DA2-6DC3-4146-B010-604504D25F69</a:ObjectID>
+<a:Name>订单状态</a:Name>
+<a:Code>订单状态</a:Code>
+<a:CreationDate>1743427545</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427663</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o159">
+<a:ObjectID>DF2D4239-21C9-4272-B639-DC5DE85AC970</a:ObjectID>
+<a:Name>明细项ID</a:Name>
+<a:Code>明细项ID</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o161">
+<a:ObjectID>A6D02BB4-B82D-40F7-8323-B444A4E5792F</a:ObjectID>
+<a:Name>所属订单编号</a:Name>
+<a:Code>所属订单编号</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o163">
+<a:ObjectID>E18D1173-C36F-4CC4-8CBC-1D8DEF2F3B8D</a:ObjectID>
+<a:Name>购买商品编码</a:Name>
+<a:Code>购买商品编码</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o165">
+<a:ObjectID>A7472B30-4164-4D1A-A608-6A0793712C1C</a:ObjectID>
+<a:Name>成交单价</a:Name>
+<a:Code>成交单价</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC10,2</a:DataType>
+<a:Length>10</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o167">
+<a:ObjectID>69924F57-A945-497C-8727-CE0CFB93F52B</a:ObjectID>
+<a:Name>购买数量</a:Name>
+<a:Code>购买数量</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o169">
+<a:ObjectID>882CFA40-C712-44FE-839E-DA6A84900106</a:ObjectID>
+<a:Name>小计金额</a:Name>
+<a:Code>小计金额</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>DC12,2</a:DataType>
+<a:Length>12</a:Length>
+<a:Precision>2</a:Precision>
+<a:GlobalObjectID/>
+</o:DataItem>
+<o:DataItem Id="o171">
+<a:ObjectID>6B8C4313-631C-494A-BBF9-3E4E921820E4</a:ObjectID>
+<a:Name>供货商ID</a:Name>
+<a:Code>供货商ID</a:Code>
+<a:CreationDate>1743427679</a:CreationDate>
+<a:Creator>JackZhai</a:Creator>
+<a:ModificationDate>1743427857</a:ModificationDate>
+<a:Modifier>JackZhai</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:GlobalObjectID/>
+</o:DataItem>
+</c:DataItems>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
